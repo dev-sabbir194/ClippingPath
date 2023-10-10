@@ -1,0 +1,62 @@
+/*
+Custom Css
+
+*/
+
+#body{
+    overflow-x: hidden;
+}
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #6c6ff5;
+}
+.nav-tabs-custom .nav-item .nav-link {
+    border: none;
+}
+.text-muted {
+    color: #8ca3bd!important;
+}
+.nav-tabs-custom .nav-item {
+    position: relative;
+    color: #271050;
+}
+.nav-tabs-custom .nav-item .nav-link.active:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.nav-tabs-custom .nav-item .nav-link::after {
+    content: "";
+    background: #6c6ff5;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+
+/* Styles for the scroll to top button */
+#scrollToTopBtn {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Fixed position - stays in the same place even when scrolling */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #59ab6e; /* Blue background */
+  color: white; /* White text */
+  cursor: pointer; /* Add a pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555; /* Dark grey background on hover */
+}
+
+
